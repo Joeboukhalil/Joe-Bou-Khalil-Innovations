@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe Bou Khalil's Innovations</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Innovations Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item h2 {
+            margin-bottom: 0.8rem;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .grid-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .grid-item button {
+            margin-top: 1rem;
+            padding: 10px 15px;
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .grid-item button:hover {
+            background-color: #34495e;
+        }
+
+        .description {
+            display: none;
+            margin-top: 1rem;
+            background-color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleDescription(id) {
+            const desc = document.getElementById(id);
+            if (desc.style.display === "none" || !desc.style.display) {
+                desc.style.display = "block";
+            } else {
+                desc.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Joe Bou Khalil's Innovations</h1>
+        <p>Inventor of Techniques for Accessibility, Learning, and Meditation</p>
+    </header>
+
+    <!-- Innovations Grid -->
+    <div class="grid-container">
+        <!-- Boukhalil Blink -->
+        <div class="grid-item">
+            <h2>Boukhalil Blink Language</h2>
+            <p>Revolutionizing communication for individuals with total paralysis.</p>
+            <button onclick="toggleDescription('desc-boukhalil')">Learn More</button>
+            <div id="desc-boukhalil" class="description">
+                <p>A communication method utilizing specific blinking patterns to empower paralyzed individuals.</p>
+            </div>
+        </div>
+
+        <!-- Harmonic Exhale Breathing -->
+        <div class="grid-item">
+            <h2>Harmonic Exhale Breathing</h2>
+            <p>Achieve relaxation through rhythmic breathing techniques.</p>
+            <button onclick="toggleDescription('desc-harmonic')">Learn More</button>
+            <div id="desc-harmonic" class="description">
+                <p>Focus on inhaling and exhaling rhythms to create harmony and reduce stress.</p>
+            </div>
+        </div>
+
+        <!-- EcoWay -->
+        <div class="grid-item">
+            <h2>EcoWay</h2>
+            <p>Navigate spaces with ease using auditory guidance systems.</p>
+            <button onclick="toggleDescription('desc-ecoway')">Learn More</button>
+            <div id="desc-ecoway" class="description">
+                <p>A Bluetooth beacon-based navigation system for visually impaired individuals.</p>
+            </div>
+        </div>
+
+        <!-- Living Poem Meditation -->
+        <div class="grid-item">
+            <h2>Living-Poem Meditation</h2>
+            <p>Combine mindfulness with poetic imagery for deep relaxation.</p>
+            <button onclick="toggleDescription('desc-living-poem')">Learn More</button>
+            <div id="desc-living-poem" class="description">
+                <p>Visualize poetic scenarios to feel time pass faster and enhance your relaxation experience.</p>
+            </div>
+        </div>
+
+        <!-- Speak, Research, and Review -->
+        <div class="grid-item">
+            <h2>Speak, Research, and Review</h2>
+            <p>Innovative learning through speaking, researching, and refining knowledge.</p>
+            <button onclick="toggleDescription('desc-srr')">Learn More</button>
+            <div id="desc-srr" class="description">
+                <p>A structured approach to enhance learning and critical thinking skills.</p>
+            </div>
+        </div>
+
+        <!-- Alphabet Pitch System -->
+        <div class="grid-item">
+            <h2>Alphabet Pitch System</h2>
+            <p>Teach phonetics to deaf learners through sound frequencies.</p>
+            <button onclick="toggleDescription('desc-pitch')">Learn More</button>
+            <div id="desc-pitch" class="description">
+                <p>Assign a specific pitch or frequency to each letter for improved lip reading and learning.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Joe Bou Khalil | <a href="https://joeboukhalil.github.io/">Portfolio Hub</a></p>
+    </footer>
+</body>
+</html>
